@@ -1,4 +1,4 @@
-# SortAlgorithm
+# 排序算法 / Sort Algorithm
 几种基本的排序算法。
 
 ### 内省相关的原位排序
