@@ -2,9 +2,9 @@
 Copyright © 2021 chibayuki@foxmail.com
 
 Sort.Sort
-Version 21.3.20.0000
+Version 21.3.27.0000
 
-This file is part of Dependency
+This file is part of Sort
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #pragma once
@@ -416,6 +416,7 @@ template<typename Iterator, typename Predicate> void _QuickSortForIntroSort(cons
 // 内省排序
 template<typename Iterator, typename Predicate> void IntroSort(const Iterator begin, const Iterator end, Predicate predicate)
 {
+	// 内省排序是 C++ std::sort() 与 C# Array.Sort() 使用的排序算法。
 	// 原理：
 	// 理想情况下，如果快速排序每一轮选取的基准值都恰好是中位数，那么整个快速排序只需递归 Log2(N) 次，
 	// 内省排序首先从快速排序开始，当递归深度超过 Log2(N) 时，对未排序完成的部分使用堆排序，
